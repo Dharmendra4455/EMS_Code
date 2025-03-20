@@ -2,44 +2,47 @@ import {useState} from "react"
 import { SetlocalStorage } from "../../utils/localStorage"
 function CreateTask({data}){
 
+const[Newtasks,setNewtasks]=useState({})
 const[id,setid]=useState("") 
 const[assignemployee,setassignemployee]=useState("")
-const[task,settask]=useState("")
-const[Submissiondate,setsubmissiondae]=useState("")
-const[Category,setcategory]=useState("")
-const[description,setdescription]=useState("")
+const[task_title,settask_title]=useState("")
+const[task_date,settask_date]=useState("")
+const[task_category,settask_category]=useState("")
+const[task_description,settask_description]=useState("")
 const namehandler=(e)=>{
   setassignemployee(e.target.value)
   setid(e.target.selectedIndex);
 }
 //console.log(assignemployee+id);
 const taskhandler=(e)=>{
-  settask(e.target.value)
+  settask_title(e.target.value)
 }
 const Submissiondatehandler=(e)=>{
-  setsubmissiondae(e.target.value)
+  settask_date(e.target.value)
 }
 const Categoryhandler=(e)=>{
-  setcategory(e.target.value)
+  settask_category(e.target.value)
 }
 
 const descriptionhandler=(e)=>{
-  setdescription(e.target.value)
+  settask_description(e.target.value)
 }
 const Createtaskhandler=(e)=>{
   e.preventDefault(); 
+      setNewtasks({task_title,task_date,task_category,task_description,new_task:true,completed:false,failed:false,active:false})
  const data1=data.employee.find((item)=>item.id==id);
   if(data1){
- 
-  data1.tasks.boolvalue.new_task=true;
-  data1.tasks.values.new_task+=1;
-  data1.tasks.values.task_category=Category
-  data1.tasks.values.task_task=task
-  data1.tasks.values.task_date=Submissiondate
-  data1.tasks.values.task_description=description
+    data1.tasks.task.push(Newtasks)
+    localStorage.setItem('employee',JSON.stringify(data))
+   console.log(data.employee)
+  // data1.tasks.boolvalue.new_task=true;
+  // data1.tasks.values.new_task+=1;
+  // data1.tasks.values.task_category=Category
+  // data1.tasks.values.task_task=tasktitle
+  // data1.tasks.values.task_date=Submissiondate
+  // data1.tasks.values.task_description=description
 }
-console.log(data1);
-
+//console.log(data1);
 }
 //console.log(data.employee);
 return(<>
@@ -57,7 +60,7 @@ return(<>
             ))
             }
           </select>
-          <h2 className="text-gray-50 font-bold mt-2">Task:</h2>
+          <h2 className="text-gray-50 font-bold mt-2">Task Title:</h2>
           <input required onChange={taskhandler} type="text" className="w-full text-white p-2 rounded  bg-stone-800" />
           <h2 className="text-gray-50 font-bold mt-2">Submission Date:</h2>
           <input required onChange={Submissiondatehandler} className="w-full p-2 rounded bg-stone-800 text-white" type="date" />
@@ -80,8 +83,6 @@ return(<>
         <div className="text-xl p-2  font-bold">Failed Task</div>
         <div className="text-xl p-2  font-bold">Completed Task</div>
       </div>
-
-     
       {
             data.employee.map((e ,id=1)=>
             ( 
