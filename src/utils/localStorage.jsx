@@ -18,16 +18,10 @@ const employee=
         "completed": 0,
         "failed": 0
       },
-      "boolvalue": {
-        "task_title": "Update Website",
-        "task_description": "Update the homepage with new branding.",
-        "task_date": "2025-03-15",
-        "task_category": "Web Development",
-        "active": true,
-        "new_task": true,
-        "completed": false,
-        "failed": false
-      }
+     "task":[
+      {"task_title": "Update Website","task_date": "2025-03-15","task_category": "Web Development","task_description": "Update the homepage with new branding.", "active": false,"new_task": true,"completed": false, "failed":false},
+      {"task_title": "Design Website","task_date": "2025-09-25","task_category": " App Development","task_description": "Design homepage with new branding.", "active": false,"new_task": true,"completed": false, "failed":false}
+     ]
     }
   },
   {
@@ -47,16 +41,11 @@ const employee=
         "completed": 0,
         "failed": 0
       },
-      "boolvalue": {
-        "task_title": "Fix Bugs",
-        "task_description": "Resolve the issues on the login page.",
-        "task_date": "2025-03-14",
-        "task_category": "Web Development",
-        "active": true,
-        "new_task": true,
-        "completed": false,
-        "failed": false
-      }
+      "task":[
+      {"task_title": "Fix Bugs","task_date": "2025-03-15","task_category": "Web Development","task_description": "Resolve the issues on the login page.", "active": false,"new_task": true,"completed": false, "failed":false},
+      {"task_title": "Design Website","task_date": "2025-09-25","task_category": " App Development","task_description": "Design homepage with new branding.", "active": false,"new_task": true,"completed": false, "failed":false}
+     ]
+     
     }
   },
   {
@@ -76,16 +65,10 @@ const employee=
         "completed": 0,
         "failed": 0
       },
-      "boolvalue": {
-        "task_title": "Design Logo",
-        "task_description": "Create a new logo for the company.",
-        "task_date": "2025-03-13",
-        "task_category": "Design",
-        "active": true,
-        "new_task": true,
-        "completed": false,
-        "failed": false
-      }
+      "task":[
+        {"task_title": "Design Logo","task_date": "2025-03-15","task_category": "Design","task_description": "Create a new logo for the company.", "active": false,"new_task": true,"completed": false, "failed":false},
+        {"task_title": "Design Website","task_date": "2025-09-25","task_category": " App Development","task_description": "Design homepage with new branding.", "active": false,"new_task": true,"completed": false, "failed":false}
+       ]
     }
   },
   {
@@ -105,16 +88,11 @@ const employee=
         "completed": 0,
         "failed": 0
       },
-      "boolvalue": {
-        "task_title": "Write Content",
-        "task_description": "Write the content for the blog section.",
-        "task_date": "2025-03-12",
-        "task_category": "Content Writing",
-        "active": true,
-        "new_task": true,
-        "completed": false,
-        "failed": false
-      }
+    "task":[
+        {"task_title": "Write Content","task_date": "2025-03-15","task_category": "Content Writing","task_description": "Write the content for the blog section.", "active": false,"new_task": true,"completed": false, "failed":false},
+        {"task_title": "Design Website","task_date": "2025-09-25","task_category": " App Development","task_description": "Design homepage with new branding.", "active": false,"new_task": true,"completed": false, "failed":false}
+       ]
+      
     }
   },
   {
@@ -143,7 +121,11 @@ const employee=
         "new_task": true,
         "completed": false,
         "failed": false
-      }
+      },
+       "task":[
+        {"task_title": "Test Features","task_date": "2025-03-15","task_category": "Quality Assurance","task_description": "Test the newly implemented features.", "active": false,"new_task": true,"completed": false, "failed":false},
+        {"task_title": "Design Website","task_date": "2025-09-25","task_category": " App Development","task_description": "Design homepage with new branding.", "active": false,"new_task": true,"completed": false, "failed":false}
+       ]
     }
   },
   {
@@ -163,16 +145,10 @@ const employee=
         "completed": 0,
         "failed": 0
       },
-      "boolvalue": {
-        "task_title": "Deploy Application",
-        "task_description": "Deploy the updated application on the server.",
-        "task_date": "2025-03-10",
-        "task_category": "DevOps",
-        "active": true,
-        "new_task": true,
-        "completed": false,
-        "failed": false
-      }
+      "task":[
+        {"task_title": "Deploy Application","task_date": "2025-03-15","task_category": "DevOps","task_description": "Deploy the updated application on the server.", "active": false,"new_task": true,"completed": false, "failed":false},
+        {"task_title": "Design Website","task_date": "2025-09-25","task_category": " App Development","task_description": "Design homepage with new branding.", "active": false,"new_task": true,"completed": false, "failed":false}
+       ]
     }
   },
   {
@@ -192,16 +168,10 @@ const employee=
         "completed": 0,
         "failed": 0
       },
-      "boolvalue": {
-        "task_title": "Create Database",
-        "task_description": "Set up a new database for the project.",
-        "task_date": "2025-03-09",
-        "task_category": "Database Administration",
-        "active": true,
-        "new_task": true,
-        "completed": false,
-        "failed": false
-      }
+     "task":[
+        {"task_title": "Create Database","task_date": "2025-03-15","task_category": "Database Administration","task_description": "Set up a new database for the project.", "active": false,"new_task": true,"completed": false, "failed":false},
+        {"task_title": "Design Website","task_date": "2025-09-25","task_category": " App Development","task_description": "Design homepage with new branding.", "active": false,"new_task": true,"completed": false, "failed":false}
+       ]
     }
   },
   {
@@ -221,16 +191,10 @@ const employee=
         "completed": 0,
         "failed": 0
       },
-      "boolvalue": {
-        "task_title": "Configure Server",
-        "task_description": "Configure the server for new deployment.",
-        "task_date": "2025-03-08",
-        "task_category": "System Administration",
-        "active": true,
-        "new_task": true,
-        "completed": false,
-        "failed": false
-      }
+      "task":[
+        {"task_title": "Configure Server","task_date": "2025-03-15","task_category": "Sysytem Administration","task_description": "Configure the server for new deployment..", "active": false,"new_task": true,"completed": false, "failed":false},
+        {"task_title": "Design Website","task_date": "2025-09-25","task_category": " App Development","task_description": "Design homepage with new branding.", "active": false,"new_task": true,"completed": false, "failed":false}
+       ]
     }
   },
   {
@@ -250,16 +214,10 @@ const employee=
         "completed": 0,
         "failed": 0
       },
-      "boolvalue": {
-        "task_title": "Manage Social Media",
-        "task_description": "Update the company's social media accounts.",
-        "task_date": "2025-03-07",
-        "task_category": "Marketing",
-        "active": true,
-        "new_task": true,
-        "completed": false,
-        "failed": false
-      }
+     "task":[
+        {"task_title": "Manage Social Media","task_date": "2025-03-15","task_category": "Marketing","task_description": "Update the company's social media accounts.", "active": false,"new_task": true,"completed": false, "failed":false},
+        {"task_title": "Design Website","task_date": "2025-09-25","task_category": " App Development","task_description": "Design homepage with new branding.", "active": false,"new_task": true,"completed": false, "failed":false}
+       ]
     }
   },
   {
@@ -279,16 +237,11 @@ const employee=
         "completed": 0,
         "failed": 0
       },
-      "boolvalue": {
-        "task_title": "Prepare Presentation",
-        "task_description": "Create a presentation for the upcoming meeting.",
-        "task_date": "2025-03-06",
-        "task_category": "Marketing",
-        "active": true,
-        "new_task": true,
-        "completed": false,
-        "failed": false
-      }
+      "task":[
+        {"task_title": "Prepare Presentation","task_date": "2025-03-15","task_category": "Marketing","task_description": "Create a presentation for the upcoming meeting.", "active": false,"new_task": true,"completed": false, "failed":false},
+        {"task_title": "Design Website","task_date": "2025-09-25","task_category": " App Development","task_description": "Design homepage with new branding.", "active": false,"new_task": true,"completed": false, "failed":false}
+       ]
+
     }
   }
 ]
