@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color:black;
+    
+}
+#tasklist::-webkit-scrollbar{
+display: none;
+
+}
+#taskstatuslist::-webkit-scrollbar{
+  display: none;
+}
+#newtasklist::-webkit-scrollbar{
+  display: none;
+  
+}
+.mezzo{
+  top:30%;
+  left:50%;
+}
+#typewriter{
+  background-image: url("./assets/loginb2.jpg");
+}
