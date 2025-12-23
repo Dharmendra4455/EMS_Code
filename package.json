@@ -2,7 +2,7 @@
   "name": "abc",
   "private": true,
   "version": "0.0.0",
- "type": "module", 
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,7 +13,9 @@
     "@tailwindcss/vite": "^4.0.14",
     "jason": "^2.0.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-toastify": "^11.0.5",
+    "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
